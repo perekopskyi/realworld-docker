@@ -20,7 +20,7 @@ const startServer = () => {
 app.get('/test', (req, res) => {
   res.send('Our api server working correctly')
 })
-app.get('/api/testapidata', (req, res) => {
+app.get('/testapidata', (req, res) => {
   res.json({
     testapidata: true,
   })

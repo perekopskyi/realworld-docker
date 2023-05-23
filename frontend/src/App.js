@@ -1,7 +1,12 @@
+import axios from 'axios'
 import logo from './logo.svg'
 import './App.css'
 
 function App() {
+  const makeApiRequest = () => {
+    axios.get('/api/testapidata').then(response => console.log(response))
+  }
+
   return (
     <div className="App">
       <header className="App-header">
@@ -17,6 +22,7 @@ function App() {
         >
           Learn React
         </a>
+        <button onClick={makeApiRequest}>Make api request</button>
       </header>
     </div>
   )
