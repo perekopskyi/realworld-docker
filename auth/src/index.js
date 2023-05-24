@@ -7,7 +7,6 @@ const app = express()
 const startServer = () => {
   app.listen(PORT, () => {
     console.log(`🚀 ~> Server auth is running on PORT=${PORT}`)
-    console.log(`🚀 ~> On host ${HOST}`)
   })
 }
 

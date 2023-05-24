@@ -13,7 +13,6 @@ const Post = mongoose.model('Post', postSchema)
 const startServer = () => {
   app.listen(PORT, () => {
     console.log(`🚀 ~> Server is running on PORT=${PORT}`)
-    console.log(`🚀 ~> On host ${HOST}`)
   })
 }
 
